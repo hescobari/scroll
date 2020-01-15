@@ -1,0 +1,8 @@
+
+.icon-home:before { content: '\e800'; } /* '' */
+.icon-blogger:before { content: '\e801'; } /* '' */
+.icon-user:before { content: '\e802'; } /* '' */
+.icon-doc-text:before { content: '\f0f6'; } /* '' */
+.icon-dot-circled:before { content: '\f192'; } /* '' */
+.icon-database:before { content: '\f1c0'; } /* '' */
+.icon-lifebuoy:before { content: '\f1cd'; } /* '' */
