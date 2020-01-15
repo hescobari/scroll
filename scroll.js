@@ -1,20 +1,3 @@
-window.onclick = (e) => 
-{
-	e.preventDefault();
-
-	switch(e.target.tagName)
-	{
-		case 'A':
-			scrollTo(e.target.href.split('#')[1]);
-		break;
-
-		case 'SPAN':
-			scrollTo(e.target.parentElement.href.split('#')[1]);
-
-		default: break;
-	}
-};
-
 // Function to scroll to an element with unique class name
 // className: Class of the element that the scroll will go
 // rate: Rate of the scroll at each iteration

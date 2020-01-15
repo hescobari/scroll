@@ -5,7 +5,7 @@
 		<link rel="stylesheet" type="text/css" href="./fontello/css/hescobari.css">
 		<link rel="stylesheet" type="text/css" href="./style.css">
 		<link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet">
-		<script type="text/javascript" src='./global.js'></script>
+		<script type="text/javascript" src='./scroll.js'></script>
 	</head>
 	<body>
 		<nav>
@@ -41,5 +41,24 @@
 		<section class='contact'>
 			<h3>contact</h3>
 		</section>
+
+		<script type="text/javascript">
+			window.onclick = (e) => 
+			{
+				e.preventDefault();
+
+				switch(e.target.tagName)
+				{
+					case 'A':
+						scrollTo(e.target.href.split('#')[1]);
+					break;
+
+					case 'SPAN':
+						scrollTo(e.target.parentElement.href.split('#')[1]);
+
+					default: break;
+				}
+			};
+		</script>
 	</body>
 </html>
